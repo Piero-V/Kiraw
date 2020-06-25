@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "987314962499",
+    "firebase_url": "https://kiraw-2f3df.firebaseio.com",
+    "project_id": "kiraw-2f3df",
+    "storage_bucket": "kiraw-2f3df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987314962499:android:8bc109f87715f748b154f6",
+        "android_client_info": {
+          "package_name": "pe.com.integrador.kiraw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987314962499-gkg1lt0q7stvjbo7f3lmjssqqcst8v1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.com.integrador.kiraw",
+            "certificate_hash": "3a2afaf1c77a6d0796cf964e8f7a410ffc7fb34b"
+          }
+        },
+        {
+          "client_id": "987314962499-blm8ppn40dm9h5j83jafvcpf04sbne6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATppQ7EcOurfcWbcz8onp4e_sNmjgSBYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987314962499-blm8ppn40dm9h5j83jafvcpf04sbne6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

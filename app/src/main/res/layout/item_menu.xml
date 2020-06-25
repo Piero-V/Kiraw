@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/foto_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="16dp"
+            app:srcCompat="@mipmap/ic_launcher_round"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/nombre_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/menu_button"
+            android:layout_toEndOf="@+id/foto_image"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:onClick="a"
+            android:text="Nombre del proveedor"
+            android:layout_toRightOf="@+id/foto_image"
+            android:layout_toLeftOf="@+id/menu_button" />
+
+        <TextView
+            android:id="@+id/precio_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/menu_button"
+            android:layout_toEndOf="@+id/foto_image"
+            android:layout_below="@+id/nombre_text"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="fecha de publicacion"
+            android:layout_toRightOf="@+id/foto_image"
+            android:layout_toLeftOf="@+id/menu_button" />
+
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/agregar_carrito"
+            android:layout_alignParentEnd="true"
+            android:background="@color/red"
+            android:onClick="q"
+
+            android:layout_alignParentRight="true" />
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:text="descripcion"
+            android:layout_below="@+id/foto_image"
+            />
+        <ImageView
+            android:id="@+id/foto_image_publicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_below="@+id/descripcion"/>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

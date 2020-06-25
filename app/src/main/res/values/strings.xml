@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Kiraw</string>
+    <string name="register">Registrarte</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="user">Ingrese usuario</string>
+    <string name="gmail">Ingrese correo</string>
+    <string name="pass">Ingrese Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="welcome">¡Bienvenido!</string>
+    //Register
+    <string name="name">Ingrese nombre</string>
+    <string name="surname">Ingrese apellidos</string>
+    <string name="username">Ingrese nombre de usuario</string>
+    <string name="telefono">Ingrese telefono</string>
+    <string name="location">Ingrese lugar de residencia</string>
+    <string name="ocupation">Ingrese ocupación</string>
+    <string name="pass_confirm">Confirme contraseña</string>
+    <string name="ingrese_aqui">Ya tienes cuenta? Ingresa aquí</string>
+
+    <string name="atras">Atrás</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="next">Siguiente</string>
+    <string name="save">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.NoActionBar">
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <style name="AppThemeCustomToolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+
+    </style>
+    
+    <style name="AppThemeCustomMenuToolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="overlapAnchor">false</item>
+
+    </style>
+
+
+
+
+
+
+
+</resources>
