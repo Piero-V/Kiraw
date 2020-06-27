@@ -3,14 +3,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/iron"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     tools:context=".fragments.PerfilFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="perfil"
-        android:textColor="@color/white"/>
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/portada"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@mipmap/ic_launcher"
+        />
+        <ImageView
+            android:id="@+id/image_user_perfil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/portada"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+        <TextView
+            android:id="@+id/nombre_user_perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Nombre del usuario"
+
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/image_user_perfil"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nombre_user_perfil">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informacion"
+                android:textColor="@color/black"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>

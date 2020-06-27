@@ -10,7 +10,8 @@
 
     <color name="transparente">#99FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="verde_claro">#41D364</color>
+    <color name="verde_claro">#71F390</color>
+    <color name="verde_claro_trans">#5C71F390</color>
     <color name="invisible">#00FFFFFF</color>
     <color name="red">#FF0000</color>
 </resources>

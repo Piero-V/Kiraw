@@ -5,7 +5,7 @@
     android:minHeight="?attr/actionBarSize"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
+    android:background="@color/verde_claro"
     app:titleTextColor="@color/black"
     app:title="Kiraw"
     android:theme="@style/AppThemeCustomToolbar"
