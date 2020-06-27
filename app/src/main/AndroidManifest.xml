@@ -15,7 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.MensajesActivity"></activity>
+        <activity android:name=".activities.Buscar"></activity>
+        <activity
+            android:name=".activities.Notificaciones"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".activities.MensajesActivity" />
         <activity
             android:name=".activities.HomeActivity"
             android:theme="@style/AppThemeNoActionBar" />

@@ -8,96 +8,48 @@
     android:background="@color/white"
     tools:context=".fragments.CarritoFragment">
 
-    <ScrollView
+    <LinearLayout
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
 
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:textSize="30dp"
+            android:text="Carrito"
+            />
 
-        <androidx.cardview.widget.CardView
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listado de productos"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            />
+        <androidx.recyclerview.widget.RecyclerView
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@color/white"
-            android:foreground="?android:attr/selectableItemBackground">
 
-            <RelativeLayout
-                android:background="@color/white"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp">
-                <ImageView
-                    android:id="@+id/foto_image"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginEnd="16dp"
-                    app:srcCompat="@mipmap/ic_launcher_round"
-                    android:layout_marginRight="16dp"
-                    android:layout_alignParentLeft="true" />
-
-                <TextView
-                    android:textColor="@color/black"
-                    android:id="@+id/nombre_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/menu_button"
-                    android:layout_toEndOf="@+id/foto_image"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="Nombre del proveedor"
-                    android:layout_toRightOf="@+id/foto_image"
-                    android:layout_toLeftOf="@+id/menu_button" />
-
-                <TextView
-                    android:id="@+id/precio_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toStartOf="@+id/menu_button"
-                    android:layout_toEndOf="@+id/foto_image"
-                    android:layout_below="@+id/nombre_text"
-                    android:layout_marginBottom="8dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"
-                    android:text="fecha de publicacion"
-                    android:layout_toRightOf="@+id/foto_image"
-                    android:layout_toLeftOf="@+id/menu_button" />
-
-                <ImageButton
-                    android:id="@+id/menu_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:src="@drawable/agregar_carrito"
-                    android:layout_alignParentEnd="true"
-                    android:background="@color/red"
-
-                    android:layout_alignParentRight="true" />
-                <TextView
-                    android:id="@+id/descripcion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="8dp"
-                    android:textSize="16sp"
-                    android:textColor="@color/black"
-                    android:text="descripcion"
-                    android:layout_below="@+id/foto_image"
-                    />
-                <ImageView
-                    android:id="@+id/foto_image_publicacion"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@mipmap/ic_launcher"
-                    android:layout_below="@+id/descripcion"/>
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:text="Pagar con Gpay"/>
 
 
 
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
 
-    </ScrollView>
+
+    </LinearLayout>
+
     <!-- TODO: Update blank fragment layout -->
 
 

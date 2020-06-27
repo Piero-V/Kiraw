@@ -11,20 +11,8 @@ public class Clientes {
     private String img_background;
     private String img_profile;
 
-    public String getImg_background() {
-        return img_background;
-    }
-
-    public void setImg_background(String img_background) {
-        this.img_background = img_background;
-    }
-
-    public String getImg_profile() {
-        return img_profile;
-    }
-
-    public void setImg_profile(String img_profile) {
-        this.img_profile = img_profile;
+    public Clientes(String name){
+        this.name = name;
     }
 
     public Integer getId() {
@@ -42,7 +30,6 @@ public class Clientes {
     public void setAddress(String address) {
         this.address = address;
     }
-
 
     public String getName() {
         return name;
@@ -74,6 +61,22 @@ public class Clientes {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getImg_background() {
+        return img_background;
+    }
+
+    public void setImg_background(String img_background) {
+        this.img_background = img_background;
+    }
+
+    public String getImg_profile() {
+        return img_profile;
+    }
+
+    public void setImg_profile(String img_profile) {
+        this.img_profile = img_profile;
     }
 
     @Override
