@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String user = edtUser.getText().toString();
                 String pass = edtPass.getText().toString();
-                if (user.equals("a") && pass.equals("a")) {
+                if (user.equals("Piero.vasquez@gmail.com") && pass.equals("123")) {
                     Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                     startActivity(intent);
                 } else {
@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(LoginActivity.this,PrincipalActivity.class);
                     startActivity(intent);
 
             }
