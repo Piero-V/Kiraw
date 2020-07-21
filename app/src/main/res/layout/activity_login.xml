@@ -52,7 +52,7 @@
                             android:id="@+id/edtUser"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:inputType="text"
+                            android:inputType="textCapWords|textEmailAddress"
                             android:autofillHints="Hola"
                             android:textColor="@color/black"
                             />

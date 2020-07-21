@@ -1,7 +1,6 @@
 package pe.com.integrador.kiraw.adapter;
 
 import android.content.Context;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pe.com.integrador.kiraw.R;
-import pe.com.integrador.kiraw.clases.Clientes;
+import pe.com.integrador.kiraw.models.Clientes;
 
 public class ClientesAdapter extends RecyclerView.Adapter<ClientesAdapter.Holderview> {
     private List<Clientes> clienteslist;

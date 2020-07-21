@@ -1,4 +1,4 @@
-package pe.com.integrador.kiraw.clases;
+package pe.com.integrador.kiraw.models;
 
 public class Users {
     private Integer id;

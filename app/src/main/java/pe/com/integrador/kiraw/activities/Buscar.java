@@ -6,15 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
@@ -23,7 +20,7 @@ import java.util.List;
 
 import pe.com.integrador.kiraw.R;
 import pe.com.integrador.kiraw.adapter.ClientesAdapter;
-import pe.com.integrador.kiraw.clases.Clientes;
+import pe.com.integrador.kiraw.models.Clientes;
 
 public class Buscar extends AppCompatActivity {
     SearchView searchView;

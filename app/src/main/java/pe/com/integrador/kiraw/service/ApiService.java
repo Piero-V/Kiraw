@@ -2,7 +2,7 @@ package pe.com.integrador.kiraw.service;
 
 import java.util.List;
 
-import pe.com.integrador.kiraw.clases.Clientes;
+import pe.com.integrador.kiraw.models.Clientes;
 import pe.com.integrador.kiraw.models.ResponseMessage;
 import retrofit2.Call;
 import retrofit2.http.Field;
