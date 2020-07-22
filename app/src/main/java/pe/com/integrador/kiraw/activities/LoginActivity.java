@@ -54,8 +54,8 @@ public class LoginActivity extends AppCompatActivity {
         btnCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    Intent intent = new Intent(LoginActivity.this,PrincipalActivity.class);
-                    startActivity(intent);
+                Intent intent = new Intent(LoginActivity.this, PrincipalActivity.class);
+                startActivity(intent);
 
             }
         });
@@ -77,33 +77,31 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-
-
     private void login() {
-        String user=edtUser.getText().toString();
-        String password=edtPass.getText().toString();
+        String user = edtUser.getText().toString();
+        String password = edtPass.getText().toString();
 
-        if(user.isEmpty()){
+        if (user.isEmpty()) {
             Toast.makeText(this, "Ingrese usuario", Toast.LENGTH_SHORT).show();
             return;
         }
-        if(password.isEmpty()){
+        if (password.isEmpty()) {
             Toast.makeText(this, "Ingrese el contraseña", Toast.LENGTH_SHORT).show();
             return;
         }
         ApiService service = ApiServiceGenerator.createService(ApiService.class);
-        Call<ResponseAuth> call = service.doLogin(user,password);
-        call.enqueue(new Callback<ResponseAuth>(){
+        Call<ResponseAuth> call = service.doLogin(user, password);
+        call.enqueue(new Callback<ResponseAuth>() {
 
 
             @Override
             public void onResponse(Call<ResponseAuth> call, Response<ResponseAuth> response) {
-                if(response.isSuccessful()) {
+                if (response.isSuccessful()) {
                     ResponseAuth usuarioResponse = response.body();
 
                     SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
                     sp.edit()
-                            .putString("username", usuarioResponse.getUsername())
+                            .putString("dni", usuarioResponse.getUsername())
                             .putString("token", usuarioResponse.getAccessToken())
                             .putBoolean("islogged", true)
                             .commit();
@@ -112,7 +110,7 @@ public class LoginActivity extends AppCompatActivity {
 
                     Toast.makeText(LoginActivity.this, "Bienvenido " + usuarioResponse.getUsername(), Toast.LENGTH_LONG).show();
 
-                }else{
+                } else {
                     /*   ApiError error = ApiServiceGenerator.parseError(response);*/
                     /* Toast.makeText(MainActivity.this, "onError:" + error.getMessage(), Toast.LENGTH_LONG).show();*/
                     Toast.makeText(LoginActivity.this, "Error en el dni o la contraseña", Toast.LENGTH_SHORT).show();
@@ -131,14 +129,16 @@ public class LoginActivity extends AppCompatActivity {
 
 
     }
-    private void loadLastUsername(){
+
+    private void loadLastUsername() {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
 
         String username = sp.getString("dni", null);
-        if(username != null){
+        if (username != null) {
             edtUser.setText(username);
         }
     }
+
     private void verifyLoginStatus() {
 
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
