@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.DetalleActivity">
+
+    <ImageView
+        android:id="@+id/foto_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/nombre_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="a"
+        android:text="Nombre del Producto"
+        android:layout_below="@+id/foto_image"/>
+    <TextView
+        android:id="@+id/Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Descripcion"
+        android:layout_below="@+id/nombre_text"
+        />
+
+    <TextView
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Descripcion"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="Cantidad: " />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/cantidad">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUser"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:autofillHints="Hola"
+            android:textColor="@color/black"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</RelativeLayout>

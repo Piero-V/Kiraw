@@ -7,6 +7,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+
+import org.w3c.dom.Text;
 
 import pe.com.integrador.kiraw.R;
 
@@ -24,6 +27,9 @@ public class MensajesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_mensajes, container, false);
+        return inflater.inflate(R.layout.item_producto, container, false);
     }
+
+
+
 }
