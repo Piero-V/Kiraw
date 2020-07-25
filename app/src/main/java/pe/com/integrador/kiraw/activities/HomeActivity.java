@@ -6,9 +6,11 @@
     import android.graphics.PorterDuff;
     import android.graphics.drawable.Drawable;
     import android.os.Bundle;
+    import android.util.Log;
     import android.view.Menu;
     import android.view.MenuInflater;
     import android.view.MenuItem;
+    import android.view.View;
     import android.widget.FrameLayout;
 
     import pe.com.integrador.kiraw.R;
@@ -22,6 +24,8 @@
     import androidx.fragment.app.FragmentTransaction;
 
     import com.google.android.material.bottomnavigation.BottomNavigationView;
+    import com.google.firebase.auth.FirebaseAuth;
+
     public class HomeActivity extends AppCompatActivity {
         private Toolbar toolbar;
         private BottomNavigationView bottomNavigationView;
@@ -117,20 +121,35 @@
 
 
 
+//        @Override
+//        public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+//            int id = item.getItemId();
+//            if (id == R.id.notificacion) {
+//                Intent intent = new Intent(HomeActivity.this, Notificaciones.class);
+//                startActivity(intent);
+//                return true;
+//            } else if (id == R.id.buscar_icon) {
+//                Intent intent = new Intent(HomeActivity.this, Buscar.class);
+//                startActivity(intent);
+//                return true;
+//            }
+//            return super.onOptionsItemSelected(item);
+//        }
         @Override
-        public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-            int id = item.getItemId();
-            if (id == R.id.notificacion) {
-                Intent intent = new Intent(HomeActivity.this, Notificaciones.class);
-                startActivity(intent);
-                return true;
-            } else if (id == R.id.buscar_icon) {
-                Intent intent = new Intent(HomeActivity.this, Buscar.class);
-                startActivity(intent);
-                return true;
-            }
-            return super.onOptionsItemSelected(item);
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+        case R.id.salir_icon:
+            callLogout(null);
+            return true;
+    }
+    return super.onOptionsItemSelected(item);
+}
+
+        private void callLogout(View view){
+            FirebaseAuth.getInstance().signOut();
+            finish();
         }
+
 
 
 

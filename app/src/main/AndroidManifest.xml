@@ -2,11 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pe.com.integrador.kiraw">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <application
         android:allowBackup="true"
         android:icon="@drawable/icon"
@@ -15,7 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".activities.DetalleActivity"></activity>
+        <activity android:name=".activities.LogeoActivity"
+            android:theme="@style/AppThemeNoActionBar"></activity>
+        <activity android:name=".activities.DetalleActivity" />
         <activity android:name=".activities.Buscar" />
         <activity
             android:name=".activities.Notificaciones"
