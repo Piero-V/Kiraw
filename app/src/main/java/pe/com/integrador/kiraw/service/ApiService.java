@@ -17,8 +17,8 @@ import retrofit2.http.POST;
 
 public interface ApiService {
 
-//    String API_BASE_URL = "https://c2893bc5f01f.ngrok.io";
-    String API_BASE_URL = "http://192.168.0.107:8082";
+    String API_BASE_URL = "https://c2893bc5f01f.ngrok.io";
+//    String API_BASE_URL = "http://192.168.0.107:8081";
 
 //    @POST("/api")
 //    Call<List<Clientes>> getClientes();
@@ -47,7 +47,7 @@ public interface ApiService {
 
     @POST("/api/clientes")
     Call<ResponseAuth> doSignUp(@Body RequestSignUp requestSignUp);
-    @GET("/api/productos")
+    @GET("/api/products")
     Call<List<Productos>> getProductos();
 
 

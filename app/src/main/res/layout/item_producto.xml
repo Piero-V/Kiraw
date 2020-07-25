@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
         <ImageView
-            android:id="@+id/foto_image"
+            android:id="@+id/image_producto"
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_alignParentStart="true"
@@ -25,12 +25,12 @@
             app:srcCompat="@mipmap/ic_launcher_round"
             android:layout_marginRight="16dp"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/Descripcion"
+            android:layout_below="@+id/descripcion_producto"
             />
 
         <TextView
             android:textColor="@color/black"
-            android:id="@+id/nombre_text"
+            android:id="@+id/nombre_producto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
@@ -38,25 +38,24 @@
             android:text="Nombre del Producto" />
 
         <TextView
-            android:id="@+id/precio_text"
+            android:id="@+id/fecha_producto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/nombre_text"
+            android:layout_below="@+id/nombre_producto"
             android:layout_marginBottom="8dp"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:text="Fecha de publicacion" />
 
-
         <TextView
-            android:id="@+id/Descripcion"
+            android:id="@+id/descripcion_producto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginVertical="8dp"
             android:textSize="16sp"
             android:textColor="@color/black"
             android:text="Descripcion"
-            android:layout_below="@+id/precio_text"
+            android:layout_below="@+id/fecha_producto"
             />
 
 

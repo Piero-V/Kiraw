@@ -31,7 +31,6 @@
             android:id="@+id/nombre_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/menu_button"
             android:layout_toEndOf="@+id/foto_image"
             android:textSize="18sp"
             android:textStyle="bold"
