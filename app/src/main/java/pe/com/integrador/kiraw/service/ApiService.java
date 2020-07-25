@@ -4,6 +4,7 @@ import java.util.List;
 
 import pe.com.integrador.kiraw.models.Clientes;
 import pe.com.integrador.kiraw.models.Productos;
+import pe.com.integrador.kiraw.models.Publicaciones;
 import pe.com.integrador.kiraw.models.RequestLogin;
 import pe.com.integrador.kiraw.models.RequestSignUp;
 import pe.com.integrador.kiraw.models.ResponseAuth;
@@ -50,7 +51,8 @@ public interface ApiService {
     @GET("/api/products")
     Call<List<Productos>> getProductos();
 
-
+    @GET("/api/publicaciones")
+    Call<List<Publicaciones>> getPublicaciones();
 
 
 

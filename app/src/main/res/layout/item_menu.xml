@@ -39,7 +39,7 @@
             android:layout_toRightOf="@+id/foto_image" />
 
         <TextView
-            android:id="@+id/precio_text"
+            android:id="@+id/fecha_publicacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/foto_image"
