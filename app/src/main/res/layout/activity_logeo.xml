@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/gray"
+    android:background="@drawable/fondo_menu3"
 
     android:gravity="center">
 
@@ -15,7 +15,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"/>
-
+    <LinearLayout
+        android:background="@drawable/elementos_login"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
     <LinearLayout
         android:id="@+id/login_panel"
         android:layout_width="match_parent"
@@ -38,13 +45,16 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
                 android:layout_marginBottom="16dp">
 
                 <EditText
                     android:id="@+id/email_input"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
+
                     android:inputType="textEmailAddress"
                     android:maxLines="1" />
 
@@ -53,9 +63,12 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColorHint="@color/gray"
+
                 android:layout_marginBottom="16dp">
 
                 <EditText
+                    android:textColor="@color/black"
                     android:id="@+id/password_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -69,23 +82,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Sign In"
-                android:textStyle="bold"
-                android:background="@color/black"
-                android:textColor="@android:color/white"
+                android:text="Iniciar Sesion"
+                android:textSize="15dp"
+                android:background="@drawable/boton_registrar"
+                android:textColor="@android:color/black"
                 android:onClick="callLogin"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Register"
-                android:textStyle="bold"
-                android:background="@color/black"
+                android:text="Registrarse"
+                android:textSize="15dp"
+                android:background="@drawable/boton_iniciar_sesion"
                 android:textColor="@android:color/white"
                 android:onClick="callRegister"/>
             <com.google.android.gms.common.SignInButton
                 android:id="@+id/sign_in_button"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
@@ -94,5 +108,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
+    </LinearLayout>
 </LinearLayout>
