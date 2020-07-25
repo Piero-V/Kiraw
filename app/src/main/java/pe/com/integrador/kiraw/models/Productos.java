@@ -1,16 +1,42 @@
 package pe.com.integrador.kiraw.models;
 
-
-import java.util.Date;
-
 public class Productos {
+
     private Integer id;
-    private Date date_created;
-    private String description;
-    private String product_image;
-    private String product_name;
+    private String name;
     private Double price;
     private Integer stock;
+    private String description;
+    private String image;
+    private String dateCreated;
+
+    /**
+     * No args constructor for use in serialization
+     *
+     */
+    public Productos() {
+    }
+
+    /**
+     *
+     * @param image
+     * @param dateCreated
+     * @param price
+     * @param name
+     * @param description
+     * @param id
+     * @param stock
+     */
+    public Productos(Integer id, String name, Double price, Integer stock, String description, String image, String dateCreated) {
+        super();
+        this.id = id;
+        this.name = name;
+        this.price = price;
+        this.stock = stock;
+        this.description = description;
+        this.image = image;
+        this.dateCreated = dateCreated;
+    }
 
     public Integer getId() {
         return id;
@@ -20,36 +46,12 @@ public class Productos {
         this.id = id;
     }
 
-    public Date getDate_created() {
-        return date_created;
+    public String getName() {
+        return name;
     }
 
-    public void setDate_created(Date date_created) {
-        this.date_created = date_created;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getProduct_image() {
-        return product_image;
-    }
-
-    public void setProduct_image(String product_image) {
-        this.product_image = product_image;
-    }
-
-    public String getProduct_name() {
-        return product_name;
-    }
-
-    public void setProduct_name(String product_name) {
-        this.product_name = product_name;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Double getPrice() {
@@ -68,14 +70,37 @@ public class Productos {
         this.stock = stock;
     }
 
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
+    }
     @Override
     public String toString() {
         return "Productos{" +
                 "id=" + id +
-                ", date_created='" + date_created + '\'' +
+                ", dateCreated='" + dateCreated + '\'' +
                 ", description='" + description + '\'' +
-                ", product_image='" + product_image + '\'' +
-                ", product_name='" + product_name + '\'' +
+                ", image='" + image + '\'' +
+                ", name='" + name + '\'' +
                 ", price='" + price + '\'' +
                 ", stock='" + stock + '\'' +
                 '}';

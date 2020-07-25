@@ -3,6 +3,7 @@ package pe.com.integrador.kiraw.service;
 import java.util.List;
 
 import pe.com.integrador.kiraw.models.Clientes;
+import pe.com.integrador.kiraw.models.Productos;
 import pe.com.integrador.kiraw.models.RequestLogin;
 import pe.com.integrador.kiraw.models.RequestSignUp;
 import pe.com.integrador.kiraw.models.ResponseAuth;
@@ -11,12 +12,13 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 public interface ApiService {
 
-//    String API_BASE_URL = "http://192.168.0.107:8082";
-    String API_BASE_URL = "https://c2893bc5f01f.ngrok.io";
+//    String API_BASE_URL = "https://c2893bc5f01f.ngrok.io";
+    String API_BASE_URL = "http://192.168.0.107:8082";
 
 //    @POST("/api")
 //    Call<List<Clientes>> getClientes();
@@ -45,6 +47,8 @@ public interface ApiService {
 
     @POST("/api/clientes")
     Call<ResponseAuth> doSignUp(@Body RequestSignUp requestSignUp);
+    @GET("/api/productos")
+    Call<List<Productos>> getProductos();
 
 
 
